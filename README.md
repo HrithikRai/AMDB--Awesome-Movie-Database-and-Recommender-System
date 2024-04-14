@@ -61,6 +61,15 @@ Action,Adventure,Animation,Children's,Comedy,Crime,Documentary,Drama,Fantasy,Fil
 
 ##  It also has the advantage of not requiring a separate database server to function. The database file format is cross-platform and accessible to any programming language that supports SQLite.
 
+# Preprocessing related interesting issue - [data_preprocessing](data_preprocessing/preprocessing.ipynb)
+
+## Finding the top 10 best rated movies - there are a lot of movies that have a perfect 5 rating but only rated by one or few users. While others have a rating like 4.5 but rated by thousands of user. So while suggesting the best rated movies which option should we go for?
+### solution - Laplace's rule of succession: Absolute High Rating vs The confidence gained by more data
+#### For a movie with perfect 5 rating but only 1 rater. We assume that there are 2 more users who have given a 5 and 1 rating. Now the average rating falls down to (5+5+1)/3 = 3.66. This process is repeated for every other movie and the results according to this new ratings are fetched 
+
+## Operations performed - Genre wise clustering, Laplace rule of succession, cosine similarity to estimate distances, groupby, genome tags extraction for sentiment analysis, dataframe manipulations
+
+#### NOTE - tested and deployment ready (heroku, cloudrun etc.)
 
 # How to run the project ?
 #### install packages listed in requirements.txt
