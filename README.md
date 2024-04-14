@@ -19,7 +19,7 @@ Action,Adventure,Animation,Children's,Comedy,Crime,Documentary,Drama,Fantasy,Fil
 
 ### Dataset Information :
 
-![](dataset_info.png)
+![](images/dataset_info.png)
 
 #### Interesting facts - 
 
@@ -28,10 +28,10 @@ Action,Adventure,Animation,Children's,Comedy,Crime,Documentary,Drama,Fantasy,Fil
 #### The movie rated most has over 80k ratings and that movie is Forrest Gump.
 
 #### The ratings are distributed as follows:
-![](ratings_dist.png)
+![](images/ratings_dist.png)
 
 ## A word cloud created from the user's tags :
-![word cloud](word_cloud.png)
+![word cloud](images/word_cloud.png)
 
 # Database Creation : 
 
@@ -62,32 +62,13 @@ Action,Adventure,Animation,Children's,Comedy,Crime,Documentary,Drama,Fantasy,Fil
 ##  It also has the advantage of not requiring a separate database server to function. The database file format is cross-platform and accessible to any programming language that supports SQLite.
 
 
-The folder AMDB contains all the files required to run the application but you will need to install some python dependencies:
-Just run the below code to install these dependencies:
+# How to run the project ?
+#### install packages listed in requirements.txt
+#### download the movielens 25m dataset and extract the files in the movielens folder in the root directory.
+#### run the files listed in data_preprocessing, it will generate all the necessary files to run the system.
+#### in the terminal run command - streamlit run main_page.py
 
-pip install streamlit
-pip install streamlit-aggrid
-pip install sqlalchemy
-pip install requests
+### Do let me know incase you face any issues in running the code - [contact me](https://docs.google.com/forms/d/e/1FAIpQLSffnCNYU70a0PRoXPvfOfCtyL5v64Jw5736fvKxjiLSHqPEjA/viewform)
 
-Also please change the address of the terminal to this folder and run the command:
-
-streamlit run main_page.py
-
-
-------------- OR -------------
-
-### The project is live at - https://hrs-amdb.herokuapp.com/ 
-(But the users section is a bit slow since 
-i've used most of my resource limit in heroku free trial account.)
-
----------------------------
-
-## Offline implentation is almost 10x faster than live version. 
-### Please run the preprocessing.ipynb to generate necessary pickle files or just contact me, ill share the link
-
-Please contact me incase of any trouble.
-
-Thanks and Regards
-Hrithik Rai Saxena
-hrithikraisaxena97@gmail.com
+Regards
+Hrithik
